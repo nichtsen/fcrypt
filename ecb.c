@@ -91,7 +91,7 @@ void main(int argc, char *argv[]) {
 
 	if (!strcmp(argv[1], "en")) {
 
-		if ((f = fopen(filename, "r")) == NULL) {
+		if ((f = fopen(filename, "rb")) == NULL) {
 			error("Error occurs while opening file %s", filename);
 		}
 		strcat(filename, ".en");
@@ -146,7 +146,7 @@ void main(int argc, char *argv[]) {
 			error("Error occurs while opening file %s", filename);
 		}
 		strcat(filename, ".de");
-		if ((fw = fopen(filename, "w")) == NULL) {
+		if ((fw = fopen(filename, "wb")) == NULL) {
 			error("Error occurs while opening file %s", filename);
 		}
 
