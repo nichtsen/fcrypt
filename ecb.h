@@ -7,8 +7,8 @@
 #include <time.h>
 #include <assert.h>
 #include <string.h>
-#include <openssl/aes.h>
 
+#include "aes.h"
 #include "utils.h"
 
 #define KEYSIZE 16

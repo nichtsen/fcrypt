@@ -3,7 +3,7 @@ CC = gcc
 OBJS = utils.o lib/aes_core.o lib/aes_ecb.o ecb.o
 PROGM = ecb
 
-DIR = openssl/include
+DIR = lib
 
 COMPILE = $(CC) -I $(DIR) -c
 
