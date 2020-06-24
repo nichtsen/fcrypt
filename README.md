@@ -9,8 +9,8 @@
 * __.de:__ decrypted file that is the same as your original file after the extension being stripped
 
 ## Usage
-ecb -en <your file waits to be encrypted>
-ecb -de <your file has been encrypted and waits to be decrypted>
+ecb -en <<your file waits to be encrypted>>
+ecb -de <<your file has been encrypted and waits to be decrypted>>
 
 ## language
 [python implementation](https://github.com/nichtsen/symk-fcrypto)
