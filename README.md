@@ -10,6 +10,7 @@
 
 ## Usage
 ecb -en \<your file waits to be encrypted\>
+
 ecb -de \<your file has been encrypted and waits to be decrypted\>
 
 ## language
