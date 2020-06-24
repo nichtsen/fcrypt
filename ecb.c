@@ -71,7 +71,7 @@ void main(int argc, char *argv[]) {
 		error("Invalid arguments\n");
 	}
 
-	if (strcmp(argv[1], "en") && strcmp(argv[1], "de")) {
+	if (strcmp(argv[1], "-en") && strcmp(argv[1], "-de")) {
 		usage();
 		while (argc-- > 0) {
 			printf("%s\n", *argv++);
@@ -89,7 +89,7 @@ void main(int argc, char *argv[]) {
 	FILE *f, *fw;
 	strcpy(filename, argv[2]);
 
-	if (!strcmp(argv[1], "en")) {
+	if (!strcmp(argv[1], "-en")) {
 
 		if ((f = fopen(filename, "rb")) == NULL) {
 			error("Error occurs while opening file %s", filename);
@@ -122,7 +122,7 @@ void main(int argc, char *argv[]) {
 		fclose(fw);
 	}
 
-	if (!strcmp(argv[1], "de")){
+	if (!strcmp(argv[1], "-de")){
 		if (!(filename[strlen(filename) - 1] == 'n'  &&
 			filename[strlen(filename) - 2] == 'e' &&
 			filename[strlen(filename) - 3] == '.'

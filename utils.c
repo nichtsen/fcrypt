@@ -14,7 +14,7 @@ void error(char *fmt, ...)
 
 void usage() {
 	fprintf(stdout,
-	"Welcome to ecb, a quick file encryption/decryption tool with aes-128\n    Usage:\necb [mode] [filename] \n    mode = de | en \n"
+	"Welcome to ecb, a quick file encryption/decryption tool\n  Usage: ecb <options> <filename>\n    options:\n      -en encryption\n      -de decryption\n"
 	);
 }
 
