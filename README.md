@@ -9,10 +9,11 @@
 * __.de:__ decrypted file that is the same as your original file after the extension being stripped
 
 ## Build
+```
 git clone https://github.com/nichtsen/fcrypt.git
 cd fcrypt
 make 
-
+```
 ## Usage
 ecb -en \<your file waits to be encrypted\>
 
