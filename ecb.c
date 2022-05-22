@@ -106,7 +106,7 @@ void main(int argc, char *argv[]) {
 
 		while ((num = readBuf(f, buf, sizeof(buf))) != 0) {
 			num = encrypt(buf, key, num);
-			if (writeBuf(fw, buf, num) == NULL) {
+			if (writeBuf(fw, buf, num) != num) {
 				break;
 			}
 			count += num;
@@ -152,7 +152,7 @@ void main(int argc, char *argv[]) {
 
 		while ((num = readBuf(f, buf, sizeof(buf))) != 0) {
 			num = decrypt(buf, dkey, num);
-			if (writeBuf(fw, buf, num) == NULL) {
+			if (writeBuf(fw, buf, num) != num) {
 				break;
 			}
 			count += num;
