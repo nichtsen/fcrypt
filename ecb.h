@@ -8,12 +8,21 @@
 #include <assert.h>
 #include <string.h>
 
-#include "aes.h"
+#include <openssl/aes.h>
 #include "utils.h"
 
 #define KEYSIZE 16
 #define MAXBYTE 256 
 #define BUFSIZE 1024 
+
+#ifndef AES_ENCRYPT
+#define AES_ENCRYPT 1
+#endif
+
+#ifndef AES_DECRYPT
+#define AES_DECRYPT 0
+#endif
+
 
 AES_KEY *klloc(void);
 void pad(unsigned char *buf, const unsigned int num);

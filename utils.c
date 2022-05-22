@@ -45,7 +45,7 @@ size_t readBuf(FILE *f, unsigned char *buf, size_t size) {
 		return num;
 	} else if (feof(f)) {
 		return num;
-		printf("%d\n", num);
+		printf("%ld\n", num);
 	} else {
 		fclose(f);
 		error("Reading error");
